@@ -1,11 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 // Initialization for ES Users
-import {
-  Collapse,
-  initTWE,
-} from "tw-elements";
-
-initTWE({ Collapse });
 
 @Component({
   selector: 'app-home',
