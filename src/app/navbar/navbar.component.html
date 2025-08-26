@@ -1,0 +1,105 @@
+<nav class="bg-white border-gray-200 dark:bg-[#080808] dark:border-gray-700">
+  <div
+    class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"
+  >
+    <!-- Logo -->
+    <a class="flex items-center space-x-3" href="#">
+      <img
+        src="assets/svgs/Studiodeka White.svg"
+        class="h-8 w-auto md:h-10 lg:h-12 object-contain"
+        alt="Studiodeka Logo"
+      />
+    </a>
+
+    <!-- Mobile menu button -->
+    <button
+      (click)="toggleMobileMenu()"
+      type="button"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none"
+    >
+      <svg
+        class="w-5 h-5"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"
+        />
+      </svg>
+    </button>
+
+    <!-- Menu items -->
+    <div
+      [ngClass]="{ hidden: !isMobileMenuOpen }"
+      class="w-full md:block md:w-auto"
+    >
+      <ul
+        class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-transparent text-white md:flex-row md:space-x-2 md:mt-0 md:border-0"
+      >
+        <li>
+          <a href="#" class="block py-2 px-3 rounded rounded-full hover:bg-[#1A1A1A] hover:bg-gray-700">Home</a>
+        </li>
+
+        <li class="relative">
+          <button
+            (click)="toggleDropdown()"
+            class="flex items-center py-2 px-3 rounded rounded-full hover:bg-[#1A1A1A] hover:bg-gray-700 w-full"
+          >
+            Services
+            <svg
+              class="w-4 h-4 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+
+          <div
+            *ngIf="isDropdownOpen"
+            class="absolute left-0 mt-2 w-48 bg-[#0D0D0D] text-white border border-gray-700 rounded-lg shadow-lg z-10"
+          >
+            <a href="#" class="block px-4 py-2 hover:bg-gray-700">Web Design</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-700">SEO</a>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 rounded rounded-full hover:bg-[#1A1A1A] hover:bg-gray-700"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 rounded rounded-full hover:bg-[#1A1A1A]"
+            >About Us</a
+          >
+        </li>
+         <li>
+          <a href="#" class="block py-2 px-3 rounded rounded-full hover:bg-[#1A1A1A] hover:bg-gray-700"
+            >Contact Us</a
+          >
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 rounded rounded-full hover:bg-[#1A1A1A] hover:bg-gray-700"
+            >Careers</a
+          >
+        </li>
+
+        <li>
+          <a href="#" class="block py-2 px-3 rounded rounded-full hover:bg-[#1A1A1A] hover:bg-gray-700"
+            >Blogs</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
