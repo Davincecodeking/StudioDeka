@@ -880,25 +880,27 @@
   <br />
   <br />
   <br />
-  <section class="py-16">
+  <section class="py-5">
     <!-- Header Section -->
-    <div class="relative max-w-7xl mx-auto w-full overflow-hidden mb-10">
-      <!-- Background Image -->
-      <img src="assets/svgs/textcontainer.svg" alt="Header" class="w-full" />
+   <div class="relative max-w-7xl mx-auto w-full overflow-hidden mb-10">
+  <!-- Background Image -->
+  <img src="assets/svgs/textcontainer.svg" alt="Header" class="w-full" />
 
-      <!-- Overlayed Centered Text -->
-      <div
-        class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4"
-      >
-        <h2 class="text-3xl md:text-5xl font-medium">
-          Frequently Asked Questions
-        </h2>
-        <p class="mt-4 text-sm md:text-base text-gray-300">
-          Still you have any questions? Contact our Team via
-          hello@studiodeka.com
-        </p>
-      </div>
-    </div>
+  <!-- Dark overlay behind text -->
+  <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+  <!-- Overlayed Centered Text -->
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
+    <h2 class="text-[16px] sm:text-2xl md:text-5xl font-semibold leading-snug">
+      Frequently Asked Questions
+    </h2>
+    <p class="mt-1 text-[6px] sm:mt-3 sm:text-sm md:text-base text-gray-300 max-w-[90%] sm:max-w-[70%]">
+      Still you have any questions? Contact our Team via hello@studiodeka.com<br class="block sm:hidden" />
+    </p>
+  </div>
+</div>
+
+
 
     <!-- Accordion Grid -->
     <div
@@ -1225,54 +1227,54 @@
     </div>
   </section>
   <section>
-    <!-- Header Section -->
-    <div class="relative max-w-7xl mx-auto w-full overflow-hidden mb-10">
-      <!-- Background Image -->
-      <img src="assets/svgs/CTA.svg" alt="cta background" />
+  <!-- Header Section -->
+  <div class="relative max-w-7xl mx-auto w-full overflow-hidden mb-10">
+    
+    <!-- Background Image -->
+    <img src="assets/svgs/CTA.svg" alt="cta background" class="w-full" />
 
-      <!-- Overlayed Centered Text -->
-      <div
-        class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4"
-      >
-        <h2 class="text-3xl md:text-5xl font-medium">
-          Ready to Transform Your Digital Presence?
-        </h2>
-        <p class="mt-5 text-[16px] md:text-base text-gray-300">
-          Take the first step towards digital success with StudioDeka by your
-          side. Our team of experts is eager to craft tailored solutions that
-          drive <br />
-          growth for your business. Whether you need a stunning website, a
-          powerful mobile app, or a data-driven marketing campaign, we've got
-          you <br />
-          covered. Let's embark on this transformative journey together.
-        </p>
-        <p class="mt-5 text-sm md:text-base text-gray-300 mb-4">
-          Unlock Your Digital Potential Today
-        </p>
-        <div class="flex gap-2">
-          <!-- Button -->
+    <!-- Overlayed Centered Text -->
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
+      
+      <h2 class="text-[10px] sm:text-3xl md:text-5xl font-semibold leading-tight">
+        Ready to Transform Your Digital Presence?
+      </h2>
 
-          <button
-            class="bg-white border border-[#FFFFFF] text-[#1A1A1A] px-6 py-2 rounded-full text-sm font-medium flex items-center gap-2 mx-auto hover:bg-[#2A2A2A] hover:text-white hover:border border-[#262626] transition relative z-10"
-          >
-            Get Started
-          </button>
+      <p class="mt-2 text-[4px] sm:mt-5 text-[6px] sm:text-[14px] text-gray-300 max-w-[90%] sm:max-w-[80%] leading-relaxed">
+        Take the first step towards digital success with StudioDeka by your side.
+        Our team of experts is eager to craft tailored solutions that drive <br> growth for your business.
+        Whether you need a stunning website, a powerful mobile app, or a data-driven marketing campaign, we've got you <br> covered.
+        Let's embark on this transformative journey together.
+      </p>
 
-          <!-- Button -->
-          <button
-            class="bg-[#1A1A1A] border border-[#262626] text-white px-6 py-2 rounded-full text-sm font-medium flex items-center gap-2 mx-auto hover:bg-[#2A2A2A] transition relative z-10"
-          >
-            Free Consultation
-          </button>
-        </div>
+      <p class="mt-2 text-[8px] sm:mt-5 sm:text-sm md:text-base text-gray-300 sm:mb-5 mb-3">
+        Unlock Your Digital Potential Today
+      </p>
+
+      <!-- Buttons -->
+      <div class="flex flex-row sm:flex-row gap-3 sm:gap-2">
+        <button
+          class="bg-white border border-white text-[#1A1A1A] px-3 py-1 sm:px-6 sm:py-3 rounded-full text-[8px] font-medium sm:text-sm hover:bg-[#2A2A2A] hover:text-white hover:border-[#262626] transition"
+        >
+          Get Started
+        </button>
+        <button
+          class="bg-[#1A1A1A] border border-[#262626] text-white px-3 py-2
+          sm:px-6 sm:py-3 rounded-full text-[8px] sm:text-sm font-medium hover:bg-[#2A2A2A] transition"
+        >
+          Free Consultation
+        </button>
       </div>
     </div>
-    <br />
-    <hr class="border-0 h-px bg-[#262626]" />
-  </section>
+  </div>
+
+  <hr class="border-0 h-px bg-[#262626]" />
+</section>
+
+  
   <section class="text-white px-6 py-12">
     <!-- Newsletter Form -->
-    <div class="max-w-7xl mx-auto">
+    <!-- <div class="max-w-7xl mx-auto">
       <h2 class="text-lg font-semibold mb-4">Get the latest information</h2>
       <form
         class="flex flex-col sm:flex-row overflow-hidden rounded-md shadow-md w-[48%]"
@@ -1289,7 +1291,26 @@
           <span>&gt;</span>
         </button>
       </form>
-    </div>
+    </div> -->
+    <div class="max-w-7xl mx-auto">
+  <h2 class="text-lg font-semibold mb-4">Get the latest information</h2>
+  <form
+    class="flex flex-row sm:flex-row overflow-hidden rounded-md shadow-md w-full sm:w-[48%] max-w-md"
+  >
+    <input
+      type="email"
+      placeholder="Email Address"
+      class="flex-1 px-4 py-3 text-black placeholder-gray-500 focus:outline-none"
+    />
+    <button
+      type="submit"
+      class="bg-[#2A2A2A] text-white px-6 py-3 flex items-center justify-center hover:bg-gray-700 transition-colors"
+    >
+      <span>&gt;</span>
+    </button>
+  </form>
+</div>
+
 
     <!-- Divider -->
     <div class="my-8 max-w-7xl mx-auto">
