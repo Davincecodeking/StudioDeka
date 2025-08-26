@@ -81,7 +81,7 @@
   </div>
 </section>
 
-<div class="bg-black w-full py-20">
+<div class="bg-black w-full">
   <div class="flex justify-center max-w-6xl mx-auto text-white">
     <h2 class="text-5xl font-medium">Reasons to Choose StudioDeka for</h2>
   </div>
@@ -96,47 +96,49 @@
   </p>
   <br />
   <div>
- <div class="space-y-8 md:space-y-0 md:flex md:justify-between md:items-start text-center py-10">
-  <!-- Card 1 -->
-  <div class="flex-1 px-6">
-    <img class="mx-auto mb-4" src="assets/svgs/result.svg" alt="result" />
-    <p class="font-semibold text-white text-lg">
-      Expertise That Drives Results
-    </p>
-    <p class="text-[#A0A0A0] mt-2 text-sm">
-      Our team of seasoned professionals brings years of<br />
-      experience and expertise to the table.
-    </p>
-  </div>
+    <div
+      class="space-y-8 md:space-y-0 md:flex md:justify-between md:items-start text-center py-10"
+    >
+      <!-- Card 1 -->
+      <div class="flex-1 px-6">
+        <img class="mx-auto mb-4" src="assets/svgs/result.svg" alt="result" />
+        <p class="font-semibold text-white text-lg">
+          Expertise That Drives Results
+        </p>
+        <p class="text-[#A0A0A0] mt-2 text-sm">
+          Our team of seasoned professionals brings years of<br />
+          experience and expertise to the table.
+        </p>
+      </div>
 
-  <!-- Divider (only show on md and above) -->
-  <div class="hidden md:block w-px bg-[#262626] self-stretch"></div>
+      <!-- Divider (only show on md and above) -->
+      <div class="hidden md:block w-px bg-[#262626] self-stretch"></div>
 
-  <!-- Card 2 -->
-  <div class="flex-1 px-6">
-    <img class="mx-auto mb-4" src="assets/svgs/idea.svg" alt="solution" />
-    <p class="font-semibold text-white text-lg">
-      Tailored Business Solutions
-    </p>
-    <p class="text-[#A0A0A0] mt-2 text-sm">
-      We understand that every business is unique.<br />
-      That's why our solutions are customized.
-    </p>
-  </div>
+      <!-- Card 2 -->
+      <div class="flex-1 px-6">
+        <img class="mx-auto mb-4" src="assets/svgs/idea.svg" alt="solution" />
+        <p class="font-semibold text-white text-lg">
+          Tailored Business Solutions
+        </p>
+        <p class="text-[#A0A0A0] mt-2 text-sm">
+          We understand that every business is unique.<br />
+          That's why our solutions are customized.
+        </p>
+      </div>
 
-  <!-- Divider -->
-  <div class="hidden md:block w-px bg-[#262626] self-stretch"></div>
+      <!-- Divider -->
+      <div class="hidden md:block w-px bg-[#262626] self-stretch"></div>
 
-  <!-- Card 3 -->
-  <div class="flex-1 px-6">
-    <img class="mx-auto mb-4" src="assets/svgs/mobile.svg" alt="mobile" />
-    <p class="font-semibold text-white text-lg">Mobile-First Approach</p>
-    <p class="text-[#A0A0A0] mt-2 text-sm">
-      We embrace a mobile-first approach to deliver<br />
-      sleek, intuitive digital experiences.
-    </p>
-  </div>
-</div>
+      <!-- Card 3 -->
+      <div class="flex-1 px-6">
+        <img class="mx-auto mb-4" src="assets/svgs/mobile.svg" alt="mobile" />
+        <p class="font-semibold text-white text-lg">Mobile-First Approach</p>
+        <p class="text-[#A0A0A0] mt-2 text-sm">
+          We embrace a mobile-first approach to deliver<br />
+          sleek, intuitive digital experiences.
+        </p>
+      </div>
+    </div>
 
     <!-- Horizontal Divider matching cards width -->
     <div class="mt-6 mx-6">
@@ -869,51 +871,62 @@
   <br />
   <br />
   <section class="py-16">
-  <!-- Header Section -->
-  <div class="relative max-w-7xl mx-auto w-full overflow-hidden mb-10">
-    <!-- Background Image -->
-    <img src="assets/svgs/textcontainer.svg" alt="Header" class="w-full" />
+    <!-- Header Section -->
+    <div class="relative max-w-7xl mx-auto w-full overflow-hidden mb-10">
+      <!-- Background Image -->
+      <img src="assets/svgs/textcontainer.svg" alt="Header" class="w-full" />
 
-    <!-- Overlayed Centered Text -->
-    <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
-      <h2 class="text-3xl md:text-5xl font-medium">Frequently Asked Questions</h2>
-      <p class="mt-4 text-sm md:text-base text-gray-300">
-        Still you have any questions? Contact our Team via hello@studiodeka.com
-      </p>
+      <!-- Overlayed Centered Text -->
+      <div
+        class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4"
+      >
+        <h2 class="text-3xl md:text-5xl font-medium">
+          Frequently Asked Questions
+        </h2>
+        <p class="mt-4 text-sm md:text-base text-gray-300">
+          Still you have any questions? Contact our Team via
+          hello@studiodeka.com
+        </p>
+      </div>
     </div>
-  </div>
 
-  <!-- Accordion Grid -->
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 px-6 border border-[#242424] py-5">
+    <!-- Accordion Grid -->
     <div
-      *ngFor="let faq of faqs; let i = index"
-      class="p-6 bg-[#1A1A1A] transition-all duration-300
-             border-b border-[#242424] 
-             md:[&:nth-child(odd)]:border-r md:border-b md:border-[#242424]"
+      class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 px-6 border border-[#242424] py-5"
     >
-      <!-- Header -->
-      <div class="flex justify-between items-start cursor-pointer" (click)="toggle(i)">
-        <div class="flex gap-4">
-          <div
-            class="bg-[#2A2A2A] text-white w-8 h-8 flex items-center justify-center text-sm font-semibold rounded-md"
-          >
-            {{ i + 1 < 10 ? '0' + (i + 1) : i + 1 }}
+      <div
+        *ngFor="let faq of faqs; let i = index"
+        class="p-6 bg-[#1A1A1A] transition-all duration-300 border-b border-[#242424] md:[&:nth-child(odd)]:border-r md:border-b md:border-[#242424]"
+      >
+        <!-- Header -->
+        <div
+          class="flex justify-between items-start cursor-pointer"
+          (click)="toggle(i)"
+        >
+          <div class="flex gap-4">
+            <div
+              class="bg-[#2A2A2A] text-white w-8 h-8 flex items-center justify-center text-sm font-semibold rounded-md"
+            >
+              {{ i + 1 < 10 ? "0" + (i + 1) : i + 1 }}
+            </div>
+            <h3 class="text-white font-medium">{{ faq.question }}</h3>
           </div>
-          <h3 class="text-white font-medium">{{ faq.question }}</h3>
+          <div class="text-white text-xl">
+            <span *ngIf="!openIndexes[i]">+</span>
+            <span *ngIf="openIndexes[i]">×</span>
+          </div>
         </div>
-        <div class="text-white text-xl">
-          <span *ngIf="!openIndexes[i]">+</span>
-          <span *ngIf="openIndexes[i]">×</span>
-        </div>
-      </div>
 
-      <!-- Collapsible Content -->
-      <div *ngIf="openIndexes[i]" class="mt-4 text-sm text-gray-400 transition-all duration-300">
-        {{ faq.answer }}
+        <!-- Collapsible Content -->
+        <div
+          *ngIf="openIndexes[i]"
+          class="mt-4 text-sm text-gray-400 transition-all duration-300"
+        >
+          {{ faq.answer }}
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <section>
     <div class="flex justify-center max-w-7xl mx-auto text-white">
@@ -922,7 +935,9 @@
       </h2>
     </div>
     <p class="px-6 mt-4 text-small text-[#666666] text-center">
-      We are grateful for the opportunity to work with esteemed partners and clients. Our strong relationships are a testament <br> to our dedication and expertise in the digital realm.
+      We are grateful for the opportunity to work with esteemed partners and
+      clients. Our strong relationships are a testament <br />
+      to our dedication and expertise in the digital realm.
     </p>
 
     <div class="min-h-screen flex items-center justify-center px-6 py-12">
@@ -948,10 +963,8 @@
                 alt="web dev"
                 class="rounded-full w-[42%]"
               />
-              <img src="assets/svgs/addicon.svg" alt="add icon"
-              class=""
-              >
-                <img
+              <img src="assets/svgs/addicon.svg" alt="add icon" class="" />
+              <img
                 src="assets/svgs/spinicon.svg"
                 alt="web dev"
                 class="rounded-full w-[42%]"
@@ -967,7 +980,9 @@
             <p
               class="text-[#A0A0A0] text-sm leading-relaxed mb-6 relative z-10 flex-grow"
             >
-             A leading technology firm that trusted StudioDeka to develop their responsive website, showcasing their cutting-edge products and services.
+              A leading technology firm that trusted StudioDeka to develop their
+              responsive website, showcasing their cutting-edge products and
+              services.
             </p>
           </div>
         </div>
@@ -988,14 +1003,12 @@
 
             <!-- Icon -->
             <div class="relative z-10 flex justify-center mb-4 mt-6">
-               <img
+              <img
                 src="assets/svgs/studiodekaspin.svg"
                 alt="web dev"
                 class="rounded-full w-[42%]"
               />
-              <img src="assets/svgs/addicon.svg" alt="add icon"
-              class=""
-              >
+              <img src="assets/svgs/addicon.svg" alt="add icon" class="" />
               <img
                 src="assets/svgs/greenearth.svg"
                 alt="web dev"
@@ -1012,7 +1025,9 @@
             <p
               class="text-[#A0A0A0] text-sm leading-relaxed mb-6 relative z-10 flex-grow"
             >
-              StudioDeka collaborated with GreenEarth Eco Store to create an engaging e-commerce platform that promotes sustainable living and eco-friendly products.
+              StudioDeka collaborated with GreenEarth Eco Store to create an
+              engaging e-commerce platform that promotes sustainable living and
+              eco-friendly products.
             </p>
           </div>
         </div>
@@ -1033,14 +1048,12 @@
 
             <!-- Icon -->
             <div class="relative z-10 flex justify-center mb-4 mt-6">
-               <img
+              <img
                 src="assets/svgs/studiodekaspin.svg"
                 alt="web dev"
                 class="rounded-full w-[42%]"
               />
-              <img src="assets/svgs/addicon.svg" alt="add icon"
-              class=""
-              >
+              <img src="assets/svgs/addicon.svg" alt="add icon" class="" />
               <img
                 src="assets/svgs/healthtechicon.svg"
                 alt="web dev"
@@ -1057,7 +1070,9 @@
             <p
               class="text-[#A0A0A0] text-sm leading-relaxed mb-6 relative z-10 flex-grow"
             >
-             StudioDeka developed a user-centric mobile app for HealthTech Innovations, helping them revolutionize the way people track and manage their health.
+              StudioDeka developed a user-centric mobile app for HealthTech
+              Innovations, helping them revolutionize the way people track and
+              manage their health.
             </p>
           </div>
         </div>
@@ -1078,14 +1093,12 @@
 
             <!-- Icon -->
             <div class="relative z-10 flex justify-center mb-4 mt-6">
-               <img
+              <img
                 src="assets/svgs/studiodekaspin.svg"
                 alt="web dev"
                 class="rounded-full w-[42%]"
               />
-              <img src="assets/svgs/addicon.svg" alt="add icon"
-              class=""
-              >
+              <img src="assets/svgs/addicon.svg" alt="add icon" class="" />
               <img
                 src="assets/svgs/globaltechicon.svg"
                 alt="web dev"
@@ -1102,12 +1115,14 @@
             <p
               class="text-[#A0A0A0] text-sm leading-relaxed mb-6 relative z-10 flex-grow"
             >
-              GlobalTech Solutions partnered with StudioDeka for a website redesign, resulting in a modern interface that elevates their online presence.
+              GlobalTech Solutions partnered with StudioDeka for a website
+              redesign, resulting in a modern interface that elevates their
+              online presence.
             </p>
           </div>
         </div>
 
-         <!-- Card 5 -->
+        <!-- Card 5 -->
         <div
           class="bg-gradient-to-b from-[#292929] to-[#070707] p-[1px] rounded-2xl h-full"
         >
@@ -1123,14 +1138,12 @@
 
             <!-- Icon -->
             <div class="relative z-10 flex justify-center mb-4 mt-6">
-               <img
+              <img
                 src="assets/svgs/studiodekaspin.svg"
                 alt="web dev"
                 class="rounded-full w-[42%]"
               />
-              <img src="assets/svgs/addicon.svg" alt="add icon"
-              class=""
-              >
+              <img src="assets/svgs/addicon.svg" alt="add icon" class="" />
               <img
                 src="assets/svgs/techguruicon.svg"
                 alt="web dev"
@@ -1147,12 +1160,14 @@
             <p
               class="text-[#A0A0A0] text-sm leading-relaxed mb-6 relative z-10 flex-grow"
             >
-              StudioDeka's digital marketing strategies boosted TechGuru Inc.'s online visibility and customer engagement, driving significant business growth.
+              StudioDeka's digital marketing strategies boosted TechGuru Inc.'s
+              online visibility and customer engagement, driving significant
+              business growth.
             </p>
           </div>
         </div>
 
-         <!-- Card 6 -->
+        <!-- Card 6 -->
         <div
           class="bg-gradient-to-b from-[#292929] to-[#070707] p-[1px] rounded-2xl h-full"
         >
@@ -1168,14 +1183,12 @@
 
             <!-- Icon -->
             <div class="relative z-10 flex justify-center mb-4 mt-6">
-               <img
+              <img
                 src="assets/svgs/studiodekaspin.svg"
                 alt="web dev"
                 class="rounded-full w-[42%]"
               />
-              <img src="assets/svgs/addicon.svg" alt="add icon"
-              class=""
-              >
+              <img src="assets/svgs/addicon.svg" alt="add icon" class="" />
               <img
                 src="assets/svgs/artscrapicon.svg"
                 alt="web dev"
@@ -1192,17 +1205,106 @@
             <p
               class="text-[#A0A0A0] text-sm leading-relaxed mb-6 relative z-10 flex-grow"
             >
-              StudioDeka brought ArtScape Gallery's artistic vision to life with a visually stunning website, showcasing the work of talented artists.
+              StudioDeka brought ArtScape Gallery's artistic vision to life with
+              a visually stunning website, showcasing the work of talented
+              artists.
             </p>
-
           </div>
         </div>
       </div>
     </div>
   </section>
+  <section>
+    <!-- Header Section -->
+    <div class="relative max-w-7xl mx-auto w-full overflow-hidden mb-10">
+      <!-- Background Image -->
+      <img src="assets/svgs/CTA.svg" alt="cta background" />
 
+      <!-- Overlayed Centered Text -->
+      <div
+        class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4"
+      >
+        <h2 class="text-3xl md:text-5xl font-medium">
+          Ready to Transform Your Digital Presence?
+        </h2>
+        <p class="mt-5 text-[16px] md:text-base text-gray-300">
+          Take the first step towards digital success with StudioDeka by your
+          side. Our team of experts is eager to craft tailored solutions that
+          drive <br />
+          growth for your business. Whether you need a stunning website, a
+          powerful mobile app, or a data-driven marketing campaign, we've got
+          you <br />
+          covered. Let's embark on this transformative journey together.
+        </p>
+        <p class="mt-5 text-sm md:text-base text-gray-300 mb-4">
+          Unlock Your Digital Potential Today
+        </p>
+        <div class="flex gap-2">
+          <!-- Button -->
 
+          <button
+            class="bg-white border border-[#FFFFFF] text-[#1A1A1A] px-6 py-2 rounded-full text-sm font-medium flex items-center gap-2 mx-auto hover:bg-[#2A2A2A] hover:text-white hover:border border-[#262626] transition relative z-10"
+          >
+            Get Started
+          </button>
 
+          <!-- Button -->
+          <button
+            class="bg-[#1A1A1A] border border-[#262626] text-white px-6 py-2 rounded-full text-sm font-medium flex items-center gap-2 mx-auto hover:bg-[#2A2A2A] transition relative z-10"
+          >
+            Free Consultation
+          </button>
+        </div>
+      </div>
+    </div>
+    <br>
+   <hr class="border-0 h-px bg-[#262626]" />
+  </section>
+  <section class="text-white px-6 py-12">
+  <!-- Newsletter Form -->
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-lg font-semibold mb-4">Get the latest information</h2>
+    <form class="flex flex-col sm:flex-row overflow-hidden rounded-md shadow-md w-[48%]">
+      <input
+        type="email"
+        placeholder="Email Address"
+        class="flex-1 px-4 py-3 text-black placeholder-gray-500 focus:outline-none"
+      />
+      <button
+        type="submit"
+        class="bg-[#2A2A2A] text-white px-6 py-3 flex items-center justify-center hover:bg-gray-700 transition-colors"
+      >
+        <span>&gt;</span>
+      </button>
+    </form>
+  </div>
 
+  <!-- Divider -->
+  <div class="border-t border-gray-700 my-8 max-w-7xl mx-auto"></div>
+
+  <!-- Footer Contact Info -->
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-6 text-sm">
+    <!-- Contact Details -->
+    <div class="flex flex-col sm:flex-row gap-6">
+      <div class="flex items-center gap-2">
+        <img src="assets/svgs/mailicon.svg" alt="email Icon" class="w-[24px] h-[24px]">
+        <span class="border-b border-gray-600">hello@studiodeka.com</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <img src="assets/svgs/phoneicon.svg" alt="phone Icon" class="w-[24px] h-[24px]">
+        <span class="border-b border-gray-600">+234-8147331562</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <img src="assets/svgs/locationicon.svg" alt="phone Icon" class="w-[24px] h-[24px]">
+        <span class="border-b border-gray-600">Somewhere in the World</span>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-gray-400 text-right">
+      © 2023 StudioDeka. All rights reserved.
+    </div>
+  </div>
+</section>
 
 </div>
