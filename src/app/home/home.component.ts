@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// Initialization for ES Users
 
 @Component({
   selector: 'app-home',
