@@ -60,6 +60,20 @@ export class HomeComponent implements OnInit {
   
 }
 
+imageObject: Array<object> = [{
+        image: 'assets/svgs/mobile.svg',
+        thumbImage: 'assets/svgs/mobile.svg',
+        alt: 'alt of image',
+        title: 'title of image'
+    }, {
+        image: 'assets/svgs/idea.svg', // Support base64 image
+        thumbImage: 'assets/svgs/idea.svg', // Support base64 image
+        title: 'Image title', //Optional: You can use this key if want to show image with title
+        alt: 'Image alt', //Optional: You can use this key if want to show image with alt
+        order: 1 //Optional: if you pass this key then slider images will be arrange according @input: slideOrderType
+    }
+];
+
 
 
   constructor() { }
