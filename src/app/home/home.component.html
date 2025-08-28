@@ -36,7 +36,8 @@
         </p>
         <br />
         <div class="flex flex-row gap-x-4">
-          <button
+          <button 
+          (click)="scrollToSection('ourWorks')"
             class="bg-opacity-50 backdrop-blur-md py-3 px-6 rounded-[8px] border border-[#262626] text-white"
           >
             Our Works
@@ -61,7 +62,7 @@
       </div>
     </div>
     <section>
-      <div class="overflow-hidden border border-[#262626] bg-[#0F0F0F] py-3 px-6">
+      <div class="overflow-hidden border border-[#262626] bg-[#0F0F0F] py-4 px-6">
         <div class="marquee">
           <ul class="marquee-content">
             <li><img src="assets/svgs/zapier.svg" alt="zapier" /></li>
@@ -370,7 +371,7 @@
       </section>
       <br />
       <br />
-      <section>
+      <section id="ourWorks">
         <div class="flex justify-center max-w-6xl mx-auto text-white">
           <h2 class="text-4xl font-medium">
             <span class="text-[#606060]">Our</span> Works
