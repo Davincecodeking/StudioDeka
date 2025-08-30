@@ -1,40 +1,94 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
 .marquee {
   display: flex;
   overflow: hidden;
+  white-space: nowrap;
   width: 100%;
 }
 
-.marquee-content {
+.marquee-content,
+.marquee__item {
   display: flex;
   gap: 2rem; /* space between logos */
   flex-shrink: 0;
-  animation: scroll 20s linear infinite;
+  animation: marquee-content 15s linear infinite; /* Adjust speed */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.marquee-content li {
+  flex: 0 0 auto;
+  padding: 5px 15px;
 }
 
 .marquee-content img {
   height: 40px; /* adjust as needed */
 }
 
-@keyframes scroll {
+.marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-content {
   from {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
   to {
     transform: translateX(-100%);
   }
 }
 
+/* Container */
+.testimonial-marquee {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+.testimonial-marquee {
+  overflow: hidden;
+  width: 100%;
+}
 
+/* Moving strip */
+.testimonial-track {
+  display: flex;
+  gap: 1.5rem; /* gap-6 */
+  padding: 0 1.5rem; /* px-6 */
+  width: max-content; /* ensure the strip is as wide as its content */
+  animation: testimonial-scroll 25s linear infinite;
+}
 
-  @keyframes scroll {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+.testimonial-card p {
+  flex: 0 0 auto;
+  white-space: normal; /* ✅ allows wrapping */
+  word-break: break-word; /* ✅ breaks long words if needed */
+}
+
+/* Pause on hover */
+.testimonial-marquee:hover .testimonial-track {
+  animation-play-state: paused;
+}
+
+/* Seamless loop: we duplicate the content and only travel half the strip */
+@keyframes testimonial-scroll {
+  from {
+    transform: translateX(0);
   }
-
-  .animate-scroll {
-    animation: scroll 30s linear infinite;
+  to {
+    transform: translateX(-50%);
   }
+}
