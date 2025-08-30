@@ -1140,18 +1140,21 @@
             </div>
           </div>
 
-          <!-- Collapsible Content -->
+          <!-- Accordion Content -->
           <div
-            *ngIf="openIndexes[i]"
-            class="mt-4 text-sm text-gray-400 transition-all duration-300"
+            class="overflow-hidden transition-all duration-500 ease-in-out text-sm text-gray-400"
+            [ngClass]="{
+              'max-h-0 opacity-0 mt-0': !openIndexes[i],
+              'max-h-[500px] opacity-100 mt-4': openIndexes[i]
+            }"
           >
             {{ faq.answer }}
           </div>
         </div>
       </div>
     </section>
-    <br>
-    <br>
+    <br />
+    <br />
 
     <section>
       <div class="flex justify-center max-w-7xl mx-auto text-white">
