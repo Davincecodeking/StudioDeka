@@ -6,9 +6,6 @@ import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landingPage/landingPage.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CommonModule } from '@angular/common';
-import { NgImageSliderModule } from 'ng-image-slider';
-
-
 
 @NgModule({
   declarations: [

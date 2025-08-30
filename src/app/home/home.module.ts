@@ -8,10 +8,10 @@ import { NgImageSliderModule } from 'ng-image-slider';
   imports: [
     CommonModule,
     HomeModuleRouting,
-    NgImageSliderModule,
+    NgImageSliderModule,  
   ],
   declarations: [
-    HomeComponent
+    HomeComponent,
   ]
 })
 export class HomeModule { }
