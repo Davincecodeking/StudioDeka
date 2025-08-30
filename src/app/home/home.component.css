@@ -24,9 +24,9 @@
   height: 40px; /* adjust as needed */
 }
 
-.marquee:hover .marquee-content {
+/* .marquee:hover .marquee-content {
   animation-play-state: paused;
-}
+} */
 
 @keyframes marquee-content {
   from {
@@ -60,9 +60,9 @@
 }
 
 /* Pause on hover */
-.testimonial-marquee:hover .testimonial-track {
+/* .testimonial-marquee:hover .testimonial-track {
   animation-play-state: paused;
-}
+} */
 
 /* Seamless loop: we duplicate the content and only travel half the strip */
 @keyframes testimonial-scroll {
